@@ -94,6 +94,38 @@ h2:after {
     line-height: 145%;
 }
 
+/*------------------ICONS-----------------*/
+
+ion-icon {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    /* secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/*------------------GENERIC LINKS-----------------*/
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
 /*------------------BUTTONS-----------------*/
 
 .btn:link,
@@ -291,6 +323,11 @@ header {
     margin-right: 25px;
 }
 
+.button-app:link,
+.button-app:visited {
+    border: 0;
+}
+
 .button-app img {
     height: 75px;
     width: auto;
@@ -303,10 +340,15 @@ header {
 /*-------------------------------------------------------*/
 
 .section-cities img {
-    width: 150px;
+    width: 100%;
     height: auto;
+    margin-bottom: 15px;
 }
 
 .section-cities ul {
     list-style: none;
+}
+
+.section-cities ul li {
+    margin-bottom: 5px;
 }
