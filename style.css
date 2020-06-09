@@ -17,6 +17,7 @@ body {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .clearfix{zoom: 1}
@@ -600,4 +601,27 @@ footer p {
     color: #888;
     text-align: center;
     margin-top: 20px;
+}
+
+/*-------------------------------------------------------*/
+/* ANIMATIONS */
+/*-------------------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-1.animate__animated,
+.js--wp-2.animate__animated,
+.js--wp-3.animate__animated {
+    opacity: 1;
 }

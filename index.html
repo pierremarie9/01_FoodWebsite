@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="queries.css">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+
         <title>Foodeo</title>
     </head>
     <body>
@@ -17,21 +19,21 @@
                 <div class="row">
                     <img src="ressources/img/logo2.png" alt="foodeo logo" class="logo" />
                     <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our cities</a></li>
-                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#delivery">Food delivery</a></li>
+                        <li><a href="#works">How it works</a></li>
+                        <li><a href="#cities">Our cities</a></li>
+                        <li><a href="#plans">Sign up</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Fresh french gastronomy right at your door.</h1>
-                <a class="btn btn-full" href="#">I'm hungry</a>
-                <a class="btn btn-ghost" href="#">Show me more</a>
+                <a class="btn btn-full js--scroll-to-plans" href="#">I'm hungry</a>
+                <a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
             </div>
         </header>
 
-        <section class="section-features js--section-features">
+        <section class="section-features js--section-features" id="delivery">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food</h2>
                 <p class="long-copy">Hello, we're Foodeo, you're new premium food delivery service. We know you're
@@ -39,7 +41,7 @@
                 </p>
             </div>
 
-            <div class="row">
+            <div class="row js--wp-1">
                 <div class="col span-1-of-4 box">
                     <div class="icon"><img src="ionicons/calendar-outline.svg" /></div>
                     <h3>Up to 365 days/year</h3>
@@ -118,13 +120,13 @@
             </ul>
         </section>
 
-        <section class="section-steps">
+        <section class="section-steps" id="works">
             <div class="row">
                 <h2>How it works &mdash; simple as 1, 2, 3</h2>
             </div>
             <div class="row">
                 <div class=" col span-1-of-2 steps-box">
-                    <img src="ressources/img/Capture3.PNG" alt="smartphone" class="app-screen" />
+                    <img src="ressources/img/Capture3.PNG" alt="smartphone" class="app-screen js--wp-2" />
                 </div>
                 <div class="col span-1-of-2 steps-box">
                     <div class="works-step">
@@ -146,11 +148,11 @@
             </div>
         </section>
 
-        <section class="section-cities">
+        <section class="section-cities" id="cities">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-3">
                 <div class="col span-1-of-4 box">
                     <img src="ressources/img/lisbon.jpg" alt="lisbon" />
                     <h3>Lisbon</h3>
@@ -219,13 +221,13 @@
             </div>
         </section>
 
-        <section class="section-plans">
+        <section class="section-plans js--section-plans" id="plans">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box js--wp-4">
                         <div>
                             <h3>Premium</h3>
                             <p class="plan-price">399€ <span>/ month</span></p>
