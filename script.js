@@ -49,9 +49,21 @@ $(document).ready(function() {
 
       $('.js--nav-icon').click(function() {
         var nav = $('.js--main-nav');
-        var icon = $('.js--nav-icon ion-icon');
+        var iconMenu = $('.js--nav-icon ion-icon:first-child');
+        var iconClose = $('.js--nav-icon ion-icon:last-child');
 
         nav.slideToggle(200);
+        if(iconMenu.hasClass('display')) {
+          iconMenu.addClass('nodisplay');
+          iconMenu.removeClass('display');
+          iconClose.addClass('display');
+          iconClose.removeClass('nodisplay');
+        } else {
+          iconMenu.addClass('display');
+          iconMenu.removeClass('nodisplay');
+          iconClose.addClass('nodisplay');
+          iconClose.removeClass('display');
+        };
 
       });
 
